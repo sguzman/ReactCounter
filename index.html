@@ -23,11 +23,28 @@
         <div id="react-mount-point"></div>
 
         <script type="text/babel">
+            const TodoForm = ({addTodo}) => {
+                let input;
+
+                return (
+                    <div>
+                        <input ref={node => {
+                            input = node;
+                        }} title="react input text buffer"/>
+                        <button onClick={() => {
+                            addTodo(input.value);
+                            input.value = '';
+                        }}>
+                        +
+                        </button>
+                    </div>
+                );
+            };
+
             ReactDOM.render(
                     <h1>React To do List</h1>,
                 document.getElementById('react-mount-point')
             );
-
         </script>
     </body>
 </html>
