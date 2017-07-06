@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta tags -->
         <meta charset="UTF-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="description" content="react todo list app test lol this is fun" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Salvador Guzman" />
 
+        <!-- CSS Styling -->
         <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- JS Stuff-->
+        <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
         <title>React To do List</title>
     </head>
     <body>
-        <header>
-            <h1>React To do List</h1>
-        </header>
-        <article>
+        <div id="react-mount-point"></div>
 
-        </article>
+        <script type="text/babel">
+            ReactDOM.render(
+                    <h1>React To do List</h1>,
+                document.getElementById('react-mount-point')
+            );
+
+        </script>
     </body>
 </html>
