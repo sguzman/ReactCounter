@@ -31,3 +31,11 @@ p {
     font-size: 100%;
     font-weight: 100;
 }
+
+div#react-body > div {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

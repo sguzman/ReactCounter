@@ -6,10 +6,12 @@ const CounterDisplay = React.createClass({
     },
 
     render: function () {
-        return React.createElement('div', null,
+        return React.createElement('div', {id: 'react-body'},
             React.createElement('h2', null, this.props.counterProp),
-            React.createElement('button', {onClick: this.props.inc}, '+'),
-            React.createElement('button', {onClick: this.props.dec}, '-')
+            React.createElement('div', null,
+                React.createElement('button', {onClick: this.props.inc}, '+'),
+                React.createElement('button', {onClick: this.props.dec}, '-')
+            )
         )
     }
 });
@@ -17,7 +19,7 @@ const CounterDisplay = React.createClass({
 const Counter = React.createClass({
     getDefaultProps: function () {
         return {
-            name: 'Tom'
+            name: 'React Counter'
         }
     },
 
