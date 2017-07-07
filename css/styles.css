@@ -33,9 +33,10 @@ p {
 }
 
 div#react-body > div {
-    margin: auto;
-    width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+button {
+    box-sizing: border-box;
 }
